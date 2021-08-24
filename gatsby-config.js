@@ -5,7 +5,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: `North Atlanta Executive Air Service`,
-    description: `Specializing in helicopter tours, charters, rotary or fixed wing flight training, and aircraft management in the greater Atlanta, Georgia region. Offering a variety of aerial tours, winery excursions, and custom charters or events to fit any budget.`,
+    description: `Specializing in helicopter tours, charters, rotary or fixed wing flight training, and aircraft management in the greater Atlanta, Georgia region. Operating out of Peachtree-Dekalb airport in Buckhead, and offering a variety of aerial tours, winery excursions, and custom charters or events to fit any budget.`,
     author: `Michael Stallings`,
     published: `2021`,
     founded: `2002`,
