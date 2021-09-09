@@ -13,3 +13,7 @@ export const Content = styled.p`
 export const Title = styled.h1`
   ${tw`uppercase mb-1 sm:mb-5 text-lg sm:text-3xl text-black w-full text-center`};
 `;
+
+export const Container = styled.div`
+  ${tw`flex flex-wrap justify-around max-w-screen-xl w-full mx-auto sm:px-10`};
+`;

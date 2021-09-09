@@ -28,6 +28,7 @@ interface SanityService {
     service_name: string;
     service_icon: IconProps;
     service_link: string;
+    service_order: number;
   }
 }
 
@@ -53,7 +54,7 @@ const Services: React.FC = () => {
           }
         }
       }
-      allSanityServices {
+      allSanityServices(sort: { fields: service_order }) {
         edges {
           node {
             id
@@ -61,6 +62,7 @@ const Services: React.FC = () => {
             service_icon
             service_name
             service_link
+            service_order
           }
         }
       }
@@ -82,7 +84,8 @@ const Services: React.FC = () => {
             service_description,
             service_icon,
             service_link,
-            service_name
+            service_name,
+            service_order
           } = item.node;
 
           return (
