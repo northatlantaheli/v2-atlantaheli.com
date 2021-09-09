@@ -49,12 +49,12 @@ const TourInfo: React.FC<XolaExperienceArray> = ({ toursArray }) => {
         All tours listed below are priced <strong>per person</strong>. <br />
         All charters are priced <strong>per hour</strong><br />
         All winery/chophouse excursions are total price <strong>up to 3 people</strong><br />
-        Find the perfect fit of time and destinations for you below!
+        <strong style={{ color: 'red' }}>Scroll down</strong> and Find the perfect fit of time and destinations for you below!
       </Styled.h3>
       {
         toursArray.map((tour) => {
           return (
-            <Styled.TourInfoItem>
+            <Styled.TourInfoItem id={`${tour.id}`}>
               <TourCard id={tour.id} name={tour.name} description={tour.desc} price={tour.price} photoLink={tour.photo.id} />
             </Styled.TourInfoItem>
           );

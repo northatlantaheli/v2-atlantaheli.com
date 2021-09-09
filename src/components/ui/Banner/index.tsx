@@ -21,9 +21,14 @@ const Banner: React.FC<Props> = ({ title, subtitle, content, linkTo, linkText, b
     <Container section>
       <Styled.Title>{title}</Styled.Title>
       <Styled.Content>{content}</Styled.Content>
-      <Link to={linkTo}>
-        <Button primary>{linkText}</Button>
-      </Link>
+      <Styled.Container>
+        <Link to={linkTo}>
+          <Button primary>{linkText}</Button>
+        </Link>
+        <a href="https://gift-ui.xola.com/#?button=61362e013cc38531ee6fea02&_=1630941414195&openExternal=true">
+          <Button primary>Gift Certificates!</Button>
+        </a>
+      </Styled.Container>
     </Container>
   </Styled.Banner>
 );
